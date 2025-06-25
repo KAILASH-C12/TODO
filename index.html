@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Tasks | Cosmic Productivity</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="universe">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        
+        <div class="app-container">
+            <header class="app-header">
+                <h1>Nebula Tasks</h1>
+                <p class="subtitle">Your cosmic to-do list</p>
+            </header>
+            
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Add a task... (try 'Buy milk tomorrow at 2pm')" autocomplete="off">
+                <button id="addTaskBtn" class="add-btn">+</button>
+            </div>
+            
+            <div class="priority-filters">
+                <button class="filter-btn active" data-priority="all">All</button>
+                <button class="filter-btn" data-priority="high">High</button>
+                <button class="filter-btn" data-priority="medium">Medium</button>
+                <button class="filter-btn" data-priority="low">Low</button>
+            </div>
+            
+            <div id="taskList" class="task-list"></div>
+            
+            <div class="stats-container">
+                <span id="taskCount">0 tasks</span>
+                <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/confetti.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
